@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клиентская галерея — Фокус-покус</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">Фокус<span>-покус</span></a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="portfolio.html" class="nav__link">Портфолио</a></li>
+                    <li><a href="pricing.html" class="nav__link">Услуги и цены</a></li>
+                    <li><a href="promotions.html" class="nav__link">Акции</a></li>
+                    <li><a href="client_gallery.html" class="nav__link active">Клиентские галереи</a></li>
+                    <li><a href="booking.html" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="dashboard.html" class="btn btn-primary">Личный кабинет</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container section">
+        <h1 class="text-center">Клиентские галереи</h1>
+        <p class="section-subtitle">Безопасный и удобный способ получить фотографии со съёмки. Просматривайте, выбирайте любимые кадры и скачивайте в высоком разрешении.</p>
+
+        <div class="gallery-features">
+            <div class="feature-box">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+  </svg>
+                <h3>Защищённый доступ</h3>
+                <p style="color: var(--color-text-secondary);">Персональная ссылка и пароль. Только вы видите свои фотографии.</p>
+            </div>
+            <div class="feature-box">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+  </svg>
+                <h3>Выбор избранных</h3>
+                <p style="color: var(--color-text-secondary);">Отмечайте сердечком кадры, которые хотите получить в ретуши.</p>
+            </div>
+            <div class="feature-box">
+<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+    <polyline points="7 10 12 15 17 10"/>
+    <line x1="12" y1="15" x2="12" y2="3"/>
+  </svg>                <h3>Скачивание в 1 клик</h3>
+                <p style="color: var(--color-text-secondary);">Отдельные фото или весь архив в высоком разрешении без ограничений.</p>
+            </div>
+        </div>
+
+        <div class="form-container gallery-login" id="login">
+            <h3>Вход в галерею</h3>
+            <p style="color: var(--color-text-secondary); margin-bottom: 1.5rem;">Введите данные из письма после съёмки</p>
+            <form>
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-input" placeholder="Ваш email">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Пароль</label>
+                    <input type="password" class="form-input" placeholder="Ваш пароль">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Войти</button>
+            </form>
+            <div class="demo-access">
+                Демо-доступ: client@example.com / demo123
+            </div>
+        </div>
+
+        <div style="margin-top: 4rem; background: var(--color-surface); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border);">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+                <div>
+                    <h3 style="margin-bottom: 0.5rem;">Ваши фотографии со съёмки</h3>
+                    <p style="color: var(--color-text-secondary);">15 октября 2026 • Статус: <span style="color: var(--color-accent); font-weight: 600;">Ожидает выбора</span></p>
+                </div>
+                <div style="text-align: right;">
+                    <p style="font-size: 0.9rem; color: var(--color-text-secondary);">Выберите 10 фото для ретуши до</p>
+                    <p style="font-weight: 600;">30 октября 2026</p>
+                </div>
+            </div>
+            
+            <div style="background: #F8F9FA; padding: 1rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+                <span>Избранное: <strong>0 / 10</strong></span>
+                <div style="display: flex; gap: 0.5rem;">
+                    <button class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.9rem;">Скачать всё (ZIP)</button>
+                    <button class="btn btn-primary" style="padding: 8px 16px; font-size: 0.9rem;">Отправить выбор</button>
+                </div>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" style="height: 200px;">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400&q=80" style="height: 100%;" alt="Фото 1">
+                </div>
+                <div class="portfolio-item" style="height: 200px;">
+                    <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=400&q=80" style="height: 100%;" alt="Фото 2">
+                </div>
+                <div class="portfolio-item" style="height: 200px;">
+                    <img src="https://images.unsplash.com/photo-1529634597503-139d3726fed5?w=400&q=80" style="height: 100%;" alt="Фото 3">
+                </div>
+                <div class="portfolio-item" style="height: 200px;">
+                    <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=400&q=80" style="height: 100%;" alt="Фото 4">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>© 2026 Фокус-покус. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

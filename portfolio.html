@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио — Фокус-покус</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">Фокус<span>-покус</span></a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="portfolio.html" class="nav__link active">Портфолио</a></li>
+                    <li><a href="pricing.html" class="nav__link">Услуги и цены</a></li>
+                    <li><a href="promotions.html" class="nav__link">Акции</a></li>
+                    <li><a href="client_gallery.html" class="nav__link">Клиентские галереи</a></li>
+                    <li><a href="booking.html" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="booking.html" class="btn btn-primary">Записаться</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container section">
+        <h1 class="text-center">Наши работы</h1>
+        <p class="section-subtitle">Каждая съёмка — это история. Здесь собраны лучшие кадры из свадебных, портретных и коммерческих проектов.</p>
+
+        <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">Все работы</button>
+            <button class="filter-btn" data-filter="wedding">Свадьбы</button>
+            <button class="filter-btn" data-filter="portrait">Портреты</button>
+            <button class="filter-btn" data-filter="love">Love Story</button>
+            <button class="filter-btn" data-filter="family">Семейные</button>
+            <button class="filter-btn" data-filter="commercial">Коммерция</button>
+        </div>
+
+        <div class="portfolio-grid" id="portfolioGrid">
+            <div class="portfolio-item" data-category="wedding">
+                <img src="0bbdb2a4521309802370cba173a445b4.jpg" alt="Свадьба">
+                <div class="portfolio-overlay"><h4>Анна & Дмитрий</h4><p>Свадьба</p></div>
+            </div>
+            <div class="portfolio-item" data-category="portrait">
+                <img src="7c65741fdf12f923468644013bbd5f51.webp" alt="Портрет">
+                <div class="portfolio-overlay"><h4>Студийная съёмка</h4><p>Портрет</p></div>
+            </div>
+            <div class="portfolio-item" data-category="love">
+                <img src="grechishkina0.jpg" alt="Love Story">
+                <div class="portfolio-overlay"><h4>Мария & Алексей</h4><p>Love Story</p></div>
+            </div>
+            <div class="portfolio-item" data-category="commercial">
+                <img src="img_7928.jpg" alt="Коммерция">
+                <div class="portfolio-overlay"><h4>Каталог бренда</h4><p>Коммерция</p></div>
+            </div>
+            <div class="portfolio-item" data-category="wedding">
+                <img src="6ffc7b754eb3a833d94c2f9ae1683626.jpg" alt="Свадьба">
+                <div class="portfolio-overlay"><h4>Елена & Сергей</h4><p>Свадьба</p></div>
+            </div>
+            <div class="portfolio-item" data-category="portrait">
+                <img src="soda_anons_autumn_202432.webp" alt="Семейные">
+                <div class="portfolio-overlay"><h4>Семейные</h4><p>Семья</p></div>
+            </div>
+            <div class="portfolio-item" data-category="love">
+                <img src="69f3753fc19245bb94639cc02aa6eee1.jpg-profi_h420.jpg" alt="Love Story">
+                <div class="portfolio-overlay"><h4>Ольга & Иван</h4><p>Love Story</p></div>
+            </div>
+            <div class="portfolio-item" data-category="commercial">
+                <img src="1bec2a6b47f12719afb6168a57b6c533.jpg" alt="Коммерция">
+                <div class="portfolio-overlay"><h4>Предметная съёмка</h4><p>Коммерция</p></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>© 2026 Фокус-покус. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

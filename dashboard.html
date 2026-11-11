@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет — Фокус-покус</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">Фокус<span>-покус</span></a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="portfolio.html" class="nav__link">Портфолио</a></li>
+                    <li><a href="pricing.html" class="nav__link">Услуги и цены</a></li>
+                    <li><a href="promotions.html" class="nav__link">Акции</a></li>
+                    <li><a href="client_gallery.html" class="nav__link">Клиентские галереи</a></li>
+                    <li><a href="booking.html" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="dashboard.html" class="btn btn-primary">Личный кабинет</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container section">
+        <h1 class="text-center">Личный кабинет</h1>
+        
+        <div class="dashboard-layout">
+            <!-- Боковая панель -->
+            <aside class="dashboard-sidebar">
+                <div class="user-profile">
+                    <img src="images (5).jpg" alt="Аватар" class="user-avatar">
+                    <div>
+                        <h3 style="margin-bottom: 4px;">Анна Соколова</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 0.9rem;">anna@example.com</p>
+                    </div>
+                </div>
+                <ul class="dashboard-nav">
+                    <li><a href="#" class="active"> Мои съёмки</a></li>
+                    <li><a href="#favorites">Избранное (3)</a></li>
+                    <li><a href="#"> Настройки профиля</a></li>
+                    <li><a href="index.html" style="color: #e74c3c;"> Выйти</a></li>
+                </ul>
+            </aside>
+
+            <!-- Основной контент -->
+            <div class="dashboard-content">
+                <!-- Активные съёмки -->
+                <div class="dash-card">
+                    <h3>Мои съёмки</h3>
+                    <div class="booking-item">
+                        <div>
+                            <h4 style="margin-bottom: 4px;">Семейная съёмка "Осень"</h4>
+                            <p style="color: var(--color-text-secondary); font-size: 0.9rem;">15 ноября 2026 • Парк Горького</p>
+                        </div>
+                        <span class="status-badge pending">Ожидает съёмки</span>
+                    </div>
+                    <div class="booking-item">
+                        <div>
+                            <h4 style="margin-bottom: 4px;">Портретная съёмка</h4>
+                            <p style="color: var(--color-text-secondary); font-size: 0.9rem;">20 октября 2026 • Студия "Фокус"</p>
+                        </div>
+                        <span class="status-badge processing">Обработка</span>
+                    </div>
+                    <div class="booking-item">
+                        <div>
+                            <h4 style="margin-bottom: 4px;">Love Story</h4>
+                            <p style="color: var(--color-text-secondary); font-size: 0.9rem;">5 сентября 2026 • Крыша Москва-Сити</p>
+                        </div>
+                        <span class="status-badge ready">Готово</span>
+                    </div>
+                </div>
+
+                <!-- Избранное -->
+                <div class="dash-card" id="favorites">
+                    <h3>
+                        Избранные фото для ретуши
+                        <a href="client_gallery.html" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">Перейти в галерею</a>
+                    </h3>
+                    <div class="favorites-grid">
+                        <div class="favorite-item">
+                            <img src="images (6).jpg" alt="Избранное 1">
+                            <button class="remove-fav" title="Удалить из избранного">×</button>
+                        </div>
+                        <div class="favorite-item">
+                            <img src="images (7).jpg" alt="Избранное 2">
+                            <button class="remove-fav" title="Удалить из избранного">×</button>
+                        </div>
+                        <div class="favorite-item">
+                            <img src="images (8).jpg" alt="Избранное 3">
+                            <button class="remove-fav" title="Удалить из избранного">×</button>
+                        </div>
+                    </div>
+                    <div style="margin-top: 1.5rem; text-align: right;">
+                        <button class="btn btn-accent">Отправить выбор фотографу</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>© 2026 Фокус-покус. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

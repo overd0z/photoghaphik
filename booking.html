@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование — Фокус-покус</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">Фокус<span>-покус</span></a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="portfolio.html" class="nav__link">Портфолио</a></li>
+                    <li><a href="pricing.html" class="nav__link">Услуги и цены</a></li>
+                    <li><a href="promotions.html" class="nav__link">Акции</a></li>
+                    <li><a href="client_gallery.html" class="nav__link">Клиентские галереи</a></li>
+                    <li><a href="booking.html" class="nav__link active">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="#bookingForm" class="btn btn-primary">Записаться</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container section">
+        <h1 class="text-center">Бронирование съёмки</h1>
+        <p class="section-subtitle">Заполните форму, и мы свяжемся с вами в течение 2 часов для обсуждения деталей.</p>
+
+        <div class="form-container" id="bookingForm">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label class="form-label">Имя и Фамилия *</label>
+                    <input type="text" class="form-input" placeholder="Пожалуйста, укажите имя" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Номер телефона *</label>
+                    <input type="tel" class="form-input" placeholder="Укажите корректный номер" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Желаемая дата съёмки *</label>
+                    <input type="date" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Тип съёмки *</label>
+                    <select class="form-select" required>
+                        <option value="" disabled selected>Выберите тип съёмки</option>
+                        <option value="wedding">Свадебная съёмка</option>
+                        <option value="portrait">Портретная съёмка</option>
+                        <option value="love">Love Story</option>
+                        <option value="family">Семейная съёмка</option>
+                        <option value="commercial">Коммерческая съёмка</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Комментарий</label>
+                    <textarea class="form-textarea" placeholder="Расскажите о ваших пожеланиях..."></textarea>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="privacy" required>
+                    <label for="privacy">Я согласен на обработку персональных данных и принимаю <a href="#" style="color: var(--color-accent); text-decoration: underline;">политику конфиденциальности</a></label>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Отправить заявку</button>
+            </form>
+            <div id="successMessage" style="display: none; text-align: center; padding: 2rem;">
+                <h3 style="color: var(--color-accent);">Заявка отправлена!</h3>
+                <p>Спасибо! Мы свяжемся с вами в ближайшее время для подтверждения брони.</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 4rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; text-align: center;">
+            <div>
+                <h4 style="margin-bottom: 0.5rem;">Телефон</h4>
+                <a href="tel:+74951234567" style="font-size: 1.2rem; font-weight: 600;">+7 (495) 123-45-67</a>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 0.5rem;">Email</h4>
+                <a href="mailto:hello@focuspokus.ru" style="font-size: 1.2rem; font-weight: 600;">hello@focuspokus.ru</a>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 0.5rem;">Адрес студии</h4>
+                <p>г. Москва, ул. Тверская, 15, 3 этаж</p>
+                <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">Пн-Вс: 10:00 — 21:00</p>
+            </div>
+        </div>
+    </main>
+  <section class="map-section">
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?ll=37.606268%2C55.761667&z=16&pt=37.606268,55.761667,pm2rdm"
+        loading="lazy"
+        title="Карта"
+      ></iframe>
+    </section>
+    <footer class="footer">
+        <div class="container text-center">
+            <p>© 2026 Фокус-покус. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

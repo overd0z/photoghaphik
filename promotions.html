@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Акции — Фокус-покус</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">Фокус<span>-покус</span></a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="portfolio.html" class="nav__link">Портфолио</a></li>
+                    <li><a href="pricing.html" class="nav__link">Услуги и цены</a></li>
+                    <li><a href="promotions.html" class="nav__link active">Акции</a></li>
+                    <li><a href="client_gallery.html" class="nav__link">Клиентские галереи</a></li>
+                    <li><a href="booking.html" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="booking.html" class="btn btn-primary">Записаться</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container section">
+        <div class="promo-hero">
+            <h1>Акции и специальные предложения</h1>
+            <p>Дарим эмоции и выгоду. Следите за обновлениями, чтобы успеть забронировать съёмку на лучших условиях.</p>
+        </div>
+
+        <h2 class="text-center" style="margin-bottom: 2rem;">Текущие предложения</h2>
+        
+        <div class="promo-grid">
+            
+            <div class="promo-card">
+                <div class="promo-card__image">
+                    <span class="promo-badge">-20%</span>
+                    <img src="4b067b874a892c2397fb68e4a9c90181.jpg" alt="Семейная съёмка">
+                </div>
+                <div class="promo-card__content">
+                    <h3 class="promo-card__title">Семейная осень</h3>
+                    <p class="promo-card__desc">Скидка 20% на все пакеты семейной съёмки при бронировании до конца ноября. Тёплые кадры для вашего семейного архива.</p>
+                    <div class="promo-card__price">
+                        <span class="old-price">28 000 ₽</span>
+                        <span class="new-price">22 400 ₽</span>
+                    </div>
+                    <p class="promo-card__validity">Действует до 30 ноября 2026</p>
+                    <a href="booking.html?promo=autumn20" class="btn btn-accent" style="width: 100%;">Забронировать со скидкой</a>
+                </div>
+            </div>
+
+            <div class="promo-card">
+                <div class="promo-card__image">
+                    <span class="promo-badge">Хит</span>
+                    <img src="grechishkina0.jpg" alt="Love Story">
+                </div>
+                <div class="promo-card__content">
+                    <h3 class="promo-card__title">Love Story по цене "Мини"</h3>
+                    <p class="promo-card__desc">Закажите съёмку Love Story и получите пакет "Стандарт" (2 часа, 30 фото в ретуши) по цене пакета "Мини". Идеально для подарка.</p>
+                    <div class="promo-card__price">
+                        <span class="old-price">28 000 ₽</span>
+                        <span class="new-price">15 000 ₽</span>
+                    </div>
+                    <p class="promo-card__validity"> Действует до 14 февраля 2027</p>
+                    <a href="booking.html?promo=lovestory" class="btn btn-accent" style="width: 100%;">Забронировать со скидкой</a>
+                </div>
+            </div>
+
+            <div class="promo-card">
+                <div class="promo-card__image">
+                    <span class="promo-badge">Подарок</span>
+                    <img src="images.jpg" alt="Подарочный сертификат">
+                </div>
+                <div class="promo-card__content">
+                    <h3 class="promo-card__title">Подарочный сертификат</h3>
+                    <p class="promo-card__desc">При покупке сертификата на любую сумму от 30 000 ₽ — фотокнига премиум-класса (стоимостью 12 000 ₽) в подарок!</p>
+                    <div class="promo-card__price">
+                        <span class="new-price">от 30 000 ₽</span>
+                    </div>
+                    <p class="promo-card__validity"> Действует бессрочно</p>
+                    <a href="booking.html?promo=certificate" class="btn btn-accent" style="width: 100%;">Заказать сертификат</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Секция подарочного сертификата -->
+        <div class="gift-cert-section">
+            <div class="gift-cert-content">
+                <h2>Не знаете, что выбрать?</h2>
+                <p>Подарочный сертификат фотостудии «Фокус-покус» — это идеальный подарок для близких. Сертификат действует 12 месяцев, его можно использовать на любой вид съёмки или дополнить услугами визажиста и стилиста.</p>
+                <ul style="margin-bottom: 1.5rem; color: var(--color-text-secondary);">
+                    <li>✓ Красивое физическое исполнение в конверте</li>
+                    <li>✓ Возможность отправки электронного варианта</li>
+                    <li>✓ Любая номинальная стоимость</li>
+                </ul>
+                <a href="booking.html?subject=certificate" class="btn btn-primary">Оформить сертификат</a>
+            </div>
+            <div style="text-align: center;">
+                <img src="images.jpg" alt="Подарочный сертификат" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-md); max-width: 100%;">
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>© 2026 Фокус-покус. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

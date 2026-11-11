@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги и цены — Фокус-покус</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">Фокус<span>-покус</span></a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="portfolio.html" class="nav__link">Портфолио</a></li>
+                    <li><a href="pricing.html" class="nav__link active">Услуги и цены</a></li>
+                    <li><a href="promotions.html" class="nav__link">Акции</a></li>
+                    <li><a href="client_gallery.html" class="nav__link">Клиентские галереи</a></li>
+                    <li><a href="booking.html" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="booking.html" class="btn btn-primary">Записаться</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container section">
+        <h1 class="text-center">Прозрачные цены</h1>
+        <p class="section-subtitle">Выберите подходящий пакет или соберите индивидуальное предложение под ваши задачи.</p>
+
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3 class="pricing-card__name">Мини</h3>
+                <p class="pricing-card__desc">Идеально для первого знакомства и быстрых портретных съёмок</p>
+                <div class="pricing-card__price">15 000 ₽ <span>/ съёмка</span></div>
+                <ul class="pricing-card__features">
+                    <li>1 час съёмки</li>
+                    <li>1 локация</li>
+                    <li>15 фото в ретуши</li>
+                    <li>50+ фото в цветокоррекции</li>
+                    <li>Готовность за 7 дней</li>
+                    <li>Личная галерея</li>
+                </ul>
+                <a href="booking.html?package=mini" class="btn btn-secondary" style="width: 100%;">Выбрать пакет</a>
+            </div>
+
+            <div class="pricing-card popular">
+                <div class="popular-badge">Популярный</div>
+                <h3 class="pricing-card__name">Стандарт</h3>
+                <p class="pricing-card__desc">Оптимальный выбор для семейных, love story и портретных съёмок</p>
+                <div class="pricing-card__price">28 000 ₽ <span>/ съёмка</span></div>
+                <ul class="pricing-card__features">
+                    <li>2 часа съёмки</li>
+                    <li>До 2 локаций</li>
+                    <li>30 фото в ретуши</li>
+                    <li>150+ фото в цветокоррекции</li>
+                    <li>Визажист на 1 час</li>
+                    <li>Готовность за 10 дней</li>
+                    <li>Личная галерея + архив</li>
+                </ul>
+                <a href="booking.html?package=standard" class="btn btn-accent" style="width: 100%;">Выбрать пакет</a>
+            </div>
+
+            <div class="pricing-card">
+                <h3 class="pricing-card__name">Премиум</h3>
+                <p class="pricing-card__desc">Для свадеб, масштабных проектов и тех, кто хочет максимум</p>
+                <div class="pricing-card__price">65 000 ₽ <span>/ съёмка</span></div>
+                <ul class="pricing-card__features">
+                    <li>Полный день (до 8 часов)</li>
+                    <li>Неограниченно локаций</li>
+                    <li>80 фото в ретуши</li>
+                    <li>500+ фото в цветокоррекции</li>
+                    <li>Визажист на весь день</li>
+                    <li>Второй фотограф</li>
+                    <li>Фотокнига в подарок</li>
+                    <li>Готовность за 14 дней</li>
+                </ul>
+                <a href="booking.html?package=premium" class="btn btn-secondary" style="width: 100%;">Выбрать пакет</a>
+            </div>
+        </div>
+
+    
+        <div style="margin-top: 4rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <h2 class="text-center">Частые вопросы</h2>
+            <div class="faq-item active">
+                <div class="faq-question">Как происходит бронирование?</div>
+                <div class="faq-answer">Вы оставляете заявку, мы согласовываем детали и дату. Для подтверждения брони вносится предоплата 30%. Остаток — в день съёмки.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Что такое ретушь и цветокоррекция?</div>
+                <div class="faq-answer">Цветокоррекция — единая обработка всех кадров (цвет, свет, контраст). Ретушь — детальная работа с выбранными фото (кожа, одежда, фон).</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Как получить готовые фото?</div>
+                <div class="faq-answer">Вы получаете доступ к защищённой личной галерее, где можно просмотреть, выбрать избранные для ретуши и скачать всё в высоком разрешении.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Можно ли перенести дату?</div>
+                <div class="faq-answer">Да, перенос возможен не позднее чем за 5 дней до съёмки. Предоплата сохраняется в течение 6 месяцев.</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>© 2026 Фокус-покус. Все права защищены.</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
